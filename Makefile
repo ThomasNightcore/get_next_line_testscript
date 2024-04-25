@@ -13,11 +13,12 @@ RM 				:= rm -rf
 # OBJS_DIR		:= obj
 #
 # Headers are to be placed into this folder.
-INCLUDES_DIR	:= .
+INCLUDES_DIR	:= ../.
 
 # Put all directory paths with the file you want to compile here.
 # They will be automatically detected with foreach.
-SRC_DIRS		:= ../.
+SRC_DIRS		:= ../.\
+				   .
 
 SRCS_C			:= $(foreach DIR,$(SRC_DIRS),$(wildcard $(DIR)/*.c))
 
