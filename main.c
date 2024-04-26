@@ -6,13 +6,16 @@
 /*   By: tluegham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 11:57:02 by tluegham          #+#    #+#             */
-/*   Updated: 2024/04/26 10:49:00 by tluegham         ###   ########.fr       */
+/*   Updated: 2024/04/26 11:32:20 by tluegham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <fcntl.h>
 #include "get_next_line.h"
+
+#define STR(x)   #x
+#define SHOW_DEFINE(x) printf("%s=%s\n", #x, STR(x))
 
 int	main(int argc, char **argv)
 {
@@ -32,6 +35,7 @@ int	main(int argc, char **argv)
 		printf("file \"%s\" could not be opened!\n", file_path);
 		return (1);
 	}
+	SHOW_DEFINE(BUFFER_SIZE);
 	res = get_next_line(fd);
 	while (res != NULL)
 	{
