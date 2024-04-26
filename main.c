@@ -6,7 +6,7 @@
 /*   By: tluegham <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 11:57:02 by tluegham          #+#    #+#             */
-/*   Updated: 2024/04/25 19:05:41 by tluegham         ###   ########.fr       */
+/*   Updated: 2024/04/26 10:49:00 by tluegham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(int argc, char **argv)
 	fd = open(file_path, O_RDONLY);
 	if (fd == -1)
 	{
-		printf("file \"%s\" could not bew opened!\n", file_path);
+		printf("file \"%s\" could not be opened!\n", file_path);
 		return (1);
 	}
 	res = get_next_line(fd);
