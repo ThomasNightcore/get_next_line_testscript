@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-search_dir=./text_files 
+search_dir=text_files 
 binary="test_next_line.a"
 buffer_size=""
 
