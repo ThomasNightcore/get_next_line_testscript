@@ -78,4 +78,4 @@ nightcore:
 	@echo "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n"
 	@echo "Copyright Thomas Nightcore 2024\nVisit at: https://www.youtube.com/@ThomasNightcore\n"
 
-.PHONY: all clean fclean re test testobj nightcore bonus
+.PHONY: all clean fclean re nightcore
